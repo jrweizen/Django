@@ -15,4 +15,12 @@ def index(request):
 def contato(request):
     return render(request, 'contato.html')
 
-# Create your views here.
+def produto(request, pk):
+    # Verifica se o parm pk está sendo recebido
+    # print(f'PK: {pk}')
+
+    prod = Produto.objects.get(id=pk)
+    context = {
+        'produto': prod
+    }
+    return render(request, 'produto.html', context)
