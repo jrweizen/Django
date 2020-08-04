@@ -26,7 +26,7 @@ SECRET_KEY = 'vt!r9fkp--dy8jqu!2_#dwh&92^5!5yvilid3nf41li@g$(4(#'
 # DEBUG = True --> Modo desenvolvimento, usa STATIC_URL
 # DEBUG = False --> Modo prod, usa STATIC_ROOT
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
