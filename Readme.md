@@ -32,6 +32,7 @@ O Gunicorn é um servidor de aplicacao
 
 <br>#### Heroku
 Faz Login  
-<br>⇒  heroku create django1-jw --buildpack heroku/python 
+⇒  heroku create django1-jw --buildpack heroku/python 
 <br>⇒  git push heroku master 
+<br>⇒  heroku logs --tail
 
