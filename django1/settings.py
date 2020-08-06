@@ -26,9 +26,9 @@ SECRET_KEY = 'vt!r9fkp--dy8jqu!2_#dwh&92^5!5yvilid3nf41li@g$(4(#'
 # DEBUG = True --> Modo desenvolvimento, usa STATIC_URL
 # DEBUG = False --> Modo prod, usa STATIC_ROOT
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']  # Domínio do Heroku
 
 
 # Application definition
@@ -43,8 +43,10 @@ INSTALLED_APPS = [
     'core',
 ]
 
+# Adicionamos whitenoise abaixo de security proposital
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

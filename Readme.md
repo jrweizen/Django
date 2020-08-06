@@ -22,3 +22,9 @@ python manage.py shell
 
 Django-admin startproject django1 .
 django-admin startapp core
+
+#### Instala pacotes adicionais - módulo básico
+pip install whitenoise gunicorn
+
+O whitenoise é para servir arquivos estaticos durante producao, integrado com django
+O Gunicorn é um servidor de aplicacao

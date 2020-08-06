@@ -1,2 +1,11 @@
 # Project exclude paths
 /venv/
+
+
+# arquivos de cache
+__pycache__
+*.*~
+
+# demais
+*. pyc
+.idea
