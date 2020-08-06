@@ -28,11 +28,11 @@ SECRET_KEY = 'vt!r9fkp--dy8jqu!2_#dwh&92^5!5yvilid3nf41li@g$(4(#'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']  # Domínio do Heroku
+# ALLOWED_HOSTS = ['*']  # Debug = True, para testes aceita tudo
+ALLOWED_HOSTS = ['django1-jw.herokuapp.com']  # Domínio do Heroku
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

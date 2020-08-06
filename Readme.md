@@ -26,5 +26,12 @@ django-admin startapp core
 #### Instala pacotes adicionais - módulo básico
 pip install whitenoise gunicorn
 
+<br>
 O whitenoise é para servir arquivos estaticos durante producao, integrado com django
 O Gunicorn é um servidor de aplicacao
+
+<br>#### Heroku
+Faz Login  
+<br>⇒  heroku create django1-jw --buildpack heroku/python 
+<br>⇒  git push heroku master 
+
